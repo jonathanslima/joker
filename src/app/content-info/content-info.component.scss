@@ -1,0 +1,35 @@
+@import '../../styles/variables.scss';
+
+.container{
+  padding: 15px;
+
+  .content-info{
+    color: $white;
+    font-family: "zubajda_dt";
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20vh;
+    opacity: 0.7;
+
+  }
+}
+
+@media(min-width: 768px){
+  .container{
+    .content-info{
+      opacity: 0.5;
+      color: $white;
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .container{
+    .content-info{
+      opacity: 0.9;
+      color: $white;
+    }
+  }
+}

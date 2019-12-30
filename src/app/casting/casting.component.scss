@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.main-actor{
+  font-size: 18px;
+}
+
+@media(min-width: 1200px){
+  .main-actor{
+    font-size: 2rem;
+  }
+}

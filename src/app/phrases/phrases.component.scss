@@ -1,0 +1,21 @@
+@import '../../styles/variables.scss';
+
+.phrases{
+  font-size: 3rem;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+@media(min-width: 768px){
+  .phrases{
+    font-size: 4rem;
+    width: 500px;
+  }
+}
+
+@media(min-width: 1200px){
+  .phrases{
+    font-size: 5rem;
+    width: 650px;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="topo uppercase dflex">
+  <nav class="menu">
+    <div id="menu-icon" (click)="showMenu()" class="lines">
+      <span class="line-1 block"></span>
+      <span class="line-2 block"></span>
+    </div>
+    <ul id="menu-items" class="list-unstyled menu-items none">
+      <li class="menu-li" *ngFor="let item of menu">
+        <span class="bg-menu-item"></span>
+        <a href="" class="menu-a">{{item}}</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="movie-name"><a class="home" href="/">Joker</a></div>
+  <button class="btn btn-outline uppercase">Tickets</button>
+</div>
