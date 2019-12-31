@@ -7,7 +7,7 @@
     <ul id="menu-items" class="list-unstyled menu-items none">
       <li class="menu-li" *ngFor="let item of menu">
         <span class="bg-menu-item"></span>
-        <a routerLink={{item.link}} class="menu-a">{{item.menuItem}}</a>
+        <a (click)="closeMenu()" routerLink={{item.link}} class="menu-a">{{item.menuItem}}</a>
       </li>
     </ul>
   </nav>

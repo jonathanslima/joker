@@ -62,11 +62,19 @@ export class TopoComponent implements OnInit {
       })
       document.querySelector('.line-1').classList.add('close-line1')
       document.querySelector('.line-2').classList.add('close-line2')
-
+      document.querySelector('.content-info').classList.add('blur')
     }else{
       menuItems.classList.add('none');
       document.querySelector('.line-1').classList.remove('close-line1')
       document.querySelector('.line-2').classList.remove('close-line2')
+      document.querySelector('.content-info').classList.remove('blur')
+
     }
+  }
+
+  closeMenu(){
+    document.querySelector('#menu-items').classList.add('none')
+    document.querySelector('.line-1').classList.remove('close-line1')
+    document.querySelector('.line-2').classList.remove('close-line2')
   }
 }

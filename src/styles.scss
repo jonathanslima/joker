@@ -50,6 +50,7 @@ body{
 }
 
 .uppercase{ text-transform: uppercase; }
+.blur{ filter: blur(2px) }
 
 a{
   @extend .trans;

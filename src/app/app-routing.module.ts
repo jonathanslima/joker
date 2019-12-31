@@ -7,7 +7,8 @@ import { CharactersComponent } from './characters/characters.component';
 const routes: Routes = [
   { path: 'home', component: ContentInfoComponent },
   { path: 'synopsis', component: SynopsisComponent },
-  { path: 'characters', component: CharactersComponent }
+  { path: 'characters', component: CharactersComponent },
+  { path: '', redirectTo: '/home',  pathMatch: 'full'},
 ];
 
 @NgModule({
