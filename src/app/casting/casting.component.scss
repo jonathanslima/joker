@@ -2,9 +2,10 @@
 
 .main-actor{
   font-size: 18px;
+  color: $green;
 }
 
-@media(min-width: 1200px){
+@media(min-width: 768px){
   .main-actor{
     font-size: 2rem;
   }

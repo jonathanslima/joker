@@ -24,9 +24,16 @@ body{
   background: none;
 }
 
-.btn-outline{
-  border: 1px solid $white;
+.btn-ticket{
+  border: none;
+  font-family: 'zubajda_dt';
   color: $white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  background-image: url('./assets/img/menu-item-bg.png');
+  color: $black;
+  background-position: right;
+  background-repeat: no-repeat;
 }
 
 .nospace{

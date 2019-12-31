@@ -7,10 +7,10 @@
     <ul id="menu-items" class="list-unstyled menu-items none">
       <li class="menu-li" *ngFor="let item of menu">
         <span class="bg-menu-item"></span>
-        <a href="" class="menu-a">{{item}}</a>
+        <a routerLink={{item.link}} class="menu-a">{{item.menuItem}}</a>
       </li>
     </ul>
   </nav>
   <div class="movie-name"><a class="home" href="/">Joker</a></div>
-  <button class="btn btn-outline uppercase">Tickets</button>
+  <button class="btn btn-ticket uppercase">Tickets</button>
 </div>

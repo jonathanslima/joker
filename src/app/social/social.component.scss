@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+
+.social{
+  padding-right: 15px;
+  .social-a{
+    color: $white;
+    padding: 10px 0;
+    display: block;
+
+    &:hover{
+      opacity: 0.5;
+    }
+  }
+}

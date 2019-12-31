@@ -6,7 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topo.component.scss']
 })
 export class TopoComponent implements OnInit {
-  public menu: string[] = ['HOME', 'SYNOPSIS', 'CHARACTERS'];
+  public menu: object[] = [
+    {
+      menuItem: 'HOME',
+      link: '/'
+    }, {
+      menuItem: 'SYNOPSIS',
+      link: '/synopsis'
+    }, {
+      menuItem: 'CHARACTERS',
+      link: '/characters'
+    }
+  ];
 
   constructor() { }
 
@@ -49,8 +60,13 @@ export class TopoComponent implements OnInit {
 
         }, .5)
       })
+      document.querySelector('.line-1').classList.add('close-line1')
+      document.querySelector('.line-2').classList.add('close-line2')
+
     }else{
       menuItems.classList.add('none');
+      document.querySelector('.line-1').classList.remove('close-line1')
+      document.querySelector('.line-2').classList.remove('close-line2')
     }
   }
 }
