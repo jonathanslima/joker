@@ -24,7 +24,8 @@
 @media(min-width: 768px){
   .container{
     .content-info{
-      color: $white;
+    transition: 500ms all ease-in-out;
+    color: $white;
     }
   }
 }

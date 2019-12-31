@@ -13,6 +13,7 @@ import { CriticsComponent } from './critics/critics.component';
 import { SynopsisComponent } from './synopsis/synopsis.component';
 import { CharactersComponent } from './characters/characters.component';
 import { AppRoutingModule } from './app-routing.module';
+import { TrailerComponent } from './trailer/trailer.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { AppRoutingModule } from './app-routing.module';
     CriticsComponent,
     SynopsisComponent,
     CharactersComponent,
+    TrailerComponent,
   ],
   imports: [BrowserModule, FontAwesomeModule, AppRoutingModule],
   providers: [],

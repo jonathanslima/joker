@@ -26,7 +26,8 @@ export class TopoComponent implements OnInit {
   }
 
   showMenu(){
-    let menuItems = document.querySelector('#menu-items');
+    let $ = document.querySelector.bind(document);
+    let menuItems = $('#menu-items');
     let checkIfHidden = menuItems.classList.contains('none');
     let arrBgs = Array.prototype.slice.call(document.querySelectorAll('.bg-menu-item'));
 
@@ -42,7 +43,6 @@ export class TopoComponent implements OnInit {
         let increase = setInterval(function(){
           if(i < 161){
             arrBgs[0].style.width= `${i}px`;
-
           }
 
           if(i > 80 && i < 321){
@@ -60,21 +60,23 @@ export class TopoComponent implements OnInit {
 
         }, .5)
       })
-      document.querySelector('.line-1').classList.add('close-line1')
-      document.querySelector('.line-2').classList.add('close-line2')
-      document.querySelector('.content-info').classList.add('blur')
+      $('.line-1').classList.add('close-line1')
+      $('.line-2').classList.add('close-line2')
+      $('.content-info, .synopsis').classList.add('blur')
+
     }else{
       menuItems.classList.add('none');
-      document.querySelector('.line-1').classList.remove('close-line1')
-      document.querySelector('.line-2').classList.remove('close-line2')
-      document.querySelector('.content-info').classList.remove('blur')
-
+      $('.line-1').classList.remove('close-line1')
+      $('.line-2').classList.remove('close-line2')
+      $('.content-info, .synopsis').classList.remove('blur')
     }
   }
 
   closeMenu(){
-    document.querySelector('#menu-items').classList.add('none')
-    document.querySelector('.line-1').classList.remove('close-line1')
-    document.querySelector('.line-2').classList.remove('close-line2')
+    let $ = document.querySelector.bind(document);
+    $('#menu-items').classList.add('none')
+    $('.line-1').classList.remove('close-line1')
+    $('.line-2').classList.remove('close-line2')
+    $('.content-info, .synopsis').classList.remove('blur')
   }
 }

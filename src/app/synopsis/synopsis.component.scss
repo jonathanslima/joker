@@ -1,0 +1,57 @@
+@import '../../styles/variables.scss';
+
+.container {
+
+  .synopsis{
+    padding: 15px;
+    color: $white;
+    background-color: rgba($black, 0.5);
+    transition: 500ms all ease-in-out;
+
+    .title{
+      font-family: "zubajda_dt";
+      font-size: 30px;
+    }
+
+    .text{
+      font-family: "Open Sans";
+
+    }
+  }
+}
+
+@media(min-width: 768px){
+  .container {
+    .synopsis{
+      .title{
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@media(min-width: 992px){
+  .container {
+    .synopsis{
+      background: none;
+      width: 70%;
+      margin-left: 5%;
+      .title{
+        // font-size: 70px;
+      }
+
+      .text{
+        line-height: 32px;
+
+      }
+    }
+  }
+}
+
+@media(min-width: 1200px){
+  .container {
+    .synopsis{
+      width: 50%;
+    }
+  }
+}
