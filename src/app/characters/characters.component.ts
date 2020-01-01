@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Characters } from './characters';
 
 @Component({
   selector: 'app-characters',
@@ -6,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./characters.component.scss']
 })
 export class CharactersComponent implements OnInit {
+  public charactersList: any[] = Characters;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faPlayCircle } from '@fortawesome/free-solid-svg-icons/faPlayCircle';
 
 @Component({
   selector: 'app-topo',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./topo.component.scss']
 })
 export class TopoComponent implements OnInit {
+  faPlayCircle = faPlayCircle;
+
+  public buttonLabel: string = 'WATCH TRAILER';
   public menu: object[] = [
     {
       menuItem: 'HOME',
@@ -22,6 +26,11 @@ export class TopoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+
+  }
+
+  openTrailer(){
+    document.querySelector('.full-screen').classList.add('open-trailer')
 
   }
 

@@ -1,0 +1,89 @@
+@import '../../styles/variables.scss';
+
+.container{ padding: 15px; }
+.characters{
+  color: $white;
+  font-family: "Open Sans";
+  width: 100%;
+  margin-top: 100px;
+
+  .list-characters{
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .char-li{
+      position: relative;
+      margin: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 120px;
+
+      &:hover{
+        .actor{
+          animation: showActorName 1s forwards;
+
+        }
+
+        .bg-photo{
+          animation: growImg 1s forwards;
+
+        }
+      }
+
+      .bg-photo{
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: -1;
+        width: 200px;
+        height: 0;
+      }
+
+      .actor{
+        font-size: 0.8rem;
+      }
+
+      .char{
+        font-family: "Londrina Outline";
+        font-size: 2rem;
+        transition: 500ms all ease-in-out;
+
+        &:hover{
+          color: #01ff20;
+        }
+
+      }
+    }
+  }
+}
+
+@media(min-width: 768px){
+  .characters{
+    width: 75%;
+
+    .list-characters{
+      display: flex;
+      
+      .char-li{
+        .actor{
+          overflow: hidden;
+          width: 0;
+          white-space: nowrap;
+        }
+
+        @keyframes growImg {
+          from{ height: 0; }
+          to{ height: 200px; }
+        }
+
+        @keyframes showActorName {
+          from{ overflow: hidden; }
+          to{ overflow: visible; width: 100%; }
+        }
+      }
+    }
+  }
+}

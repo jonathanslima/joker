@@ -3,7 +3,7 @@
     <header>
       <h1 class="title uppercase">{{ titleSynopsis }}</h1>
     </header>
-    
-    <p class="text">{{ textSynopsis }}</p>
+
+    <p class="text" *ngFor="let i of textSynopsis">{{ i }}</p>
   </section>
 </div>

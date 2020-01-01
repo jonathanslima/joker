@@ -1,1 +1,11 @@
-<p>characters works!</p>
+<div class="container">
+  <div id="characters" class="characters">
+    <ul class="list-unstyled list-characters">
+      <li class="char-li" *ngFor="let character of charactersList">
+        <div class="bg-photo" [ngStyle]="{ 'background-image': 'url(' + character.img + ')'}"></div>
+        <span class="block actor">{{ character.name }}</span>
+        <span class="block char uppercase">{{ character.actor }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
