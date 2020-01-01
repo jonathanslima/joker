@@ -6,14 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./critics.component.scss']
 })
 export class CriticsComponent implements OnInit {
-  public mainCritic: object[] = [{
+  public mainCritic: any[] = [{
     critic: 'The film of the year!',
     source: 'Empire'
   }]
   constructor() { }
 
   ngOnInit() {
-    
+
   }
 
 }
